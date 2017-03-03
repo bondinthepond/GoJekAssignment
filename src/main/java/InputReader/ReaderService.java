@@ -20,6 +20,9 @@ public class ReaderService {
         Thread t1 = new Thread(inputReader1);
         Thread t2 = new Thread(inputReader2);
 
+        t1.setDaemon(true);
+        t2.setDaemon(true);
+
         t1.start();
         t2.start();
 

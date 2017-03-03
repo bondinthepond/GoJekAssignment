@@ -36,5 +36,6 @@ public class MessageService {
 
             i++;
         }
+        executorService.shutdown();
     }
 }
